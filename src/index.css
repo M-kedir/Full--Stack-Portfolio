@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  background-color: #ede9df;
+}
+
+:root.dark {
+  color-scheme: dark;
+  background-color: #0c0f18;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ede9df;
+  color: #11131c;
+  font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+.dark body {
+  background-color: #0c0f18;
+  color: #f0eee7;
+}
+
+/* Typography scale */
+@layer base {
+  h1 {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-semibold;
+  }
+
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+}
+
+/************** Utilities **************/
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-soft;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent via-smoke to-accentMuted bg-clip-text text-transparent;
+  }
+}
