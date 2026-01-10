@@ -1,4 +1,4 @@
-# Porty · Premium Portfolio
+# Mohammed's Portfolio
 
 A modern personal portfolio built with React, Vite, TailwindCSS, and Framer Motion. The layout emphasizes generous whitespace, tactile micro-interactions, and a neutral palette for showcasing high-end creative work.
 
